@@ -23,7 +23,7 @@ public class BeerRestControllerIT extends BaseIT {
         requestParams.add("Api-Key", "spring");
         requestParams.add("Api-Secret", "guru");
 
-        mockMvc.perform(delete("/api/v1/beer/…")
+        mockMvc.perform(delete("/api/v1/beer/97df0c39-90c4-4ae0-b663-453e8e19c311")
                         .params(requestParams))
                 .andExpect(status().isOk());
     }
